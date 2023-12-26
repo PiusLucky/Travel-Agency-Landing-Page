@@ -7,5 +7,9 @@
 }
 
 .volkhov {
-  font-family: Volkhov, sans-serif;
+  font-family: Volkhov;
+}
+
+.red-gradient {
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
 }

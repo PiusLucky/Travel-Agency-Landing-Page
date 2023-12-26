@@ -18,6 +18,7 @@ type MainButtonProps = {
   rightIconClass?: string;
   iconComponent?: ReactElement;
   size?: "small" | "normal" | "large";
+  isGradient?: boolean;
 };
 
 const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
@@ -38,19 +39,20 @@ const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
       rightIconClass = "w-[24px] h-[24px]",
       iconComponent,
       size = "normal",
+      isGradient,
     },
     ref
   ) => {
     const propWidth =
-      width === "full_width" ? "w-full" : width ? width : "w-[245px]";
+      width === "full_width" ? "w-full" : width ? width : "w-[6.375rem]";
 
     const isSecondaryVariant = variant !== "primary";
 
     const size_height =
       size === "normal"
-        ? "h-[3.1215rem]"
+        ? "h-[2.256rem]"
         : size === "large"
-        ? "h-[3.75rem]"
+        ? "h-[2.256rem]"
         : "h-[2.625rem]";
 
     const variant_hover =
@@ -61,7 +63,9 @@ const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
         form={form}
         className={`${
           isSecondaryVariant ? " text-white  bg-secondary" : "bg-primary"
-        } text-white shadow-xl ${propWidth} md:${propWidth}  select-none rounded-[0.625rem] hover:opacity-90 ${variant_hover} ${size_height} ${classes}`}
+        } text-white shadow-xl ${propWidth} md:${propWidth}  select-none rounded-[0.625rem] hover:opacity-90 ${variant_hover} ${size_height} ${classes} ${
+          isGradient ? "red-gradient" : ""
+        }`}
         onClick={!disabled ? action : () => undefined}
         type={isSubmitable ? "submit" : "button"}
         ref={ref}
