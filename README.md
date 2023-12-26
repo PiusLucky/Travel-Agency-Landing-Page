@@ -2,7 +2,7 @@
 A Travel Agency Landing Page built with Next14, Shadcn, and Tailwind.
 
 # ☁️ Deployed link
-[https://saas-wallet.vercel.app/](https://travel-agency-landing-page-zeta.vercel.app/)
+https://travel-agency-landing-page-zeta.vercel.app/
 
 Youtube: 
 
