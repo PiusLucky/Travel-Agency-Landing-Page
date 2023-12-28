@@ -4,7 +4,7 @@ A Travel Agency Landing Page built with Next14, Shadcn, and Tailwind.
 # ☁️ Deployed link
 https://travel-agency-landing-page-zeta.vercel.app/
 
-Youtube: 
+Youtube:  https://youtu.be/psY6VQVcJRA
 
 Figma: https://www.figma.com/file/p53sK0QS4IPLb864z3PFc0/Travel-Website-Landing-Page-(Community)?node-id=1%3A432&mode=dev
 
